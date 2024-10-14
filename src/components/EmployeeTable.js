@@ -37,7 +37,7 @@ const EmployeeTable = () => {
 
   // Fetching data from API
   useEffect(() => {
-    fetch('https://hub.dummyapis.com/employee?noOfRecords=10&idStarts=1001') // API to fetch 10 employee records starting from id 1001
+    fetch('https://hub.dummyapis.com/employee') // API to fetch 10 employee records starting from id 1001
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
